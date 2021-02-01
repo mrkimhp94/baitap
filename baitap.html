@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = [[2, 3, 4], [4, 5, 3], [12, 4, 5]];
+    let tich;
+    let index
+    let max = a[0][0]
+    for (let i = 0; i < a.length; i++) {
+        tich = 1
+        for (let j = 0; j < a[i].length; j++) {
+            tich = tich * a[j][i];
+            if (max < a[i][j]) {
+                max = a[i][j];
+                index = i
+            }
+
+        }
+        document.write("tích cột " + i + " = " + tich + "<br>")
+
+
+    }
+    document.write("max là " + max + "tại hàng" + index )
+
+</script>
+</body>
+</html>

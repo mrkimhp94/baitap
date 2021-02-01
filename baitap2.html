@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [[2, 3, 4], [4, 5, 3], [12, 4, 5]];
+    let sumchinh = 0;
+    let sumphu = 0;
+    for (let i = 0; i < a.length; i++) {
+        sumphu = sumphu + a[i][a[i].length-1-i]
+        for (let j = 0; j < a[i].length; j++) {
+
+            if (i == j){
+                sumchinh = sumchinh + a[i][j]
+            }
+
+        }
+
+    }
+    document.write("tổng đường cheó chính là : " + sumchinh + "<br>")
+    document.write("tổng đường chéo phụ là : " + sumphu)
+</script>
+</body>
+</html>
